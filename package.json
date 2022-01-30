@@ -1,0 +1,21 @@
+{
+  "name": "automation-task",
+  "version": "1.0.0",
+  "description": "task used in interviews for automation team candidates",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "npx playwright test --headed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/approve/automation-task.git"
+  },
+  "author": "Gal Yaniv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/approve/automation-task/issues"
+  },
+  "homepage": "https://github.com/approve/automation-task#readme"
+}
