@@ -25,10 +25,13 @@ We use Playwright to write end-to-end tests that run as part of our CI cycle.
 ## Steps 📃
 - Get familiar with the application and it's functionality
 - Define test scenarios for the application's features/functionality
-- Clone this repository to your local machine
-- Start a new branch
+- Fork this repository
 - Write test spec files under `src/tests/` directory, use `example.spec.ts` file and playwright documentation as reference
 - Write test plans and create a new project for each plan in `playwright.config.ts`
+- To test your work:
+  - to run all tests use `npm run test` in your integrated terminal.
+  - To test a specific project use `npm run test -- --project=<project>` in your integrated terminal, where `<project>` is an item from `projects` array in `playwright.config.ts`
+  - To test a specific file use `npm run test <file_name>` in your integrated terminal, where `<file_name>` is the name of a file from `/src/tests` directory
 
 ## Criteria 👨🏻‍🏫
 - All tests should pass
@@ -37,4 +40,4 @@ We use Playwright to write end-to-end tests that run as part of our CI cycle.
 - Use the most fitting Playwright functions
 
 ## Submission 🏁
-- When you're done, push your branch to the remote repository and we'll go over it 😁
+- When you're done, send a link of your repository to [approve-qa@tipalti.com](mailto:approve-qa@tipalti.com)
