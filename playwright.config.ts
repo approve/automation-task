@@ -9,8 +9,8 @@ const config: PlaywrightTestConfig = {
     channel: 'chrome',
     viewport: { width: 1920, height: 969 },
     launchOptions: {
-      slowMo: 5000,
-      args: ['--disable-dev-shm-usage']
+      args: ['--disable-dev-shm-usage'],
+      headless: false,
     }
   },
   projects: [
