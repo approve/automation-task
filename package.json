@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "task used in interviews for automation team candidates",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
   "scripts": {
-    "test": "npx playwright test"
+    "playwright": "npx playwright test --headed",
+    "selenium": "mocha ./src/selenium-tests/*"
   },
   "repository": {
     "type": "git",
@@ -17,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/approve/automation-task/issues"
   },
-  "homepage": "https://github.com/approve/automation-task#readme"
+  "homepage": "https://github.com/approve/automation-task#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.49.0",
+    "@types/node": "^22.9.3"
+  },
+  "dependencies": {
+    "mocha": "^10.8.2",
+    "selenium-webdriver": "^4.26.0"
+  }
 }

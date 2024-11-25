@@ -1,24 +1,14 @@
-import { expect, PlaywrightTestConfig } from '@playwright/test';
+import { defineConfig } from '@playwright/test';
 
-const config: PlaywrightTestConfig = {
-  timeout: 10000,
+export default defineConfig({
+  testDir: './src/playwright-tests',
+  fullyParallel: true,
+  retries: 0,
   workers: 1,
-  reporter: "list",
-  use: {
-    browserName: 'chromium',
-    channel: 'chrome',
-    viewport: { width: 1920, height: 969 },
-    launchOptions: {
-      args: ['--disable-dev-shm-usage'],
-      headless: false,
-    }
-  },
+  reporter: 'list',
   projects: [
-      {
-          name: "example",
-          testMatch: "example.spec.ts"
-      }
-  ],
-};
-
-export default config;
+    {
+      name: 'example',
+    }
+  ]
+});
