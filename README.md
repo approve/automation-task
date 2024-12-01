@@ -20,11 +20,14 @@ Write the tests in whatever format you are comfortable with, just make sure to i
 ## Task 2: Automation
 - Choose 3 of the most critical test scenarios written in the last step
 - Fork this repository
-- choose the framework you're more comfortable with
+- Run `npm install` to install dependencies
+- Choose the framework you're more comfortable with
   - [playwright 🎭](https://playwright.dev/docs/intro)
+    - Run `npx playwright install` to install the necessary browsers
     - Write test files under `src/playwright-tests/` directory, use `example.spec.ts` file and documentation as reference
     - To test your work run `npm run playwright`
   - [selenium ✅](https://www.selenium.dev/documentation/webdriver/getting_started/)
+    - Run `npx selenium-standalone install` to install the necessary browsers
     - Write test files under `src/selenium-tests/` directory, use `example.spec.ts` file and documentation as reference
     - To test your work run `npm run selenium`
 - All tests should pass
