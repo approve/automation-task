@@ -27,4 +27,3 @@ test.skip('should be able to mark all tasks as completed', async ({ page }) => {
     expect( toggleAllInput.isChecked()).toBe(true);
 });
 
-// explain the test and fix the issues
